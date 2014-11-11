@@ -74,7 +74,7 @@ void ShowProcessBar(int width,int percent)
 
 void ShowSpeed(double kbs)
 {
-	char *csp[]={"K/s","M/s","G/s"}, *sp;
+	const char *csp[]={"K/s","M/s","G/s"}, *sp;
 
 	if( (int)kbs >> 10 < 1)
 		sp = csp[0];	
